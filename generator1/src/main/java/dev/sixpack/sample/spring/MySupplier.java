@@ -16,10 +16,14 @@ public class MySupplier extends Supplier {
                 .withSixPackUrl("localhost:7233")
                 .withAccount("MyAccount")
                 .withEnvironment("STAGE")
-                .withClientCertificatePath("certs/generator.cert") // download this file from the settings page
-                .withClientKeyPath("certs/generator.pkey") // download this file from the settings page
-                .withGenerators(
-                        new MyGenerator1())
+                .withClientCertificatePath("certs/generator.cert.pem") // download this file from the settings page
+                .withClientKeyPath("certs/generator.pkey.pem") // download this file from the settings page
+                .withGenerators( // register all generators you want to include, create the objects
+                        new MyGenerator1(),
+                        new MyGenerator2())
+                .withOrchestrators( // register all orchestrators, just give the classes, an instance will be created per request
+                        MyOrchestrator1.class
+                )
                 .bootstrap();
     }
 }

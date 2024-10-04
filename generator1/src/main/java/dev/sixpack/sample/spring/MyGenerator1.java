@@ -5,7 +5,7 @@ import dev.sixpack.generator.ItemName;
 
 @ItemName("MyEntity1")
 public class MyGenerator1 extends Generator {
-    // Types definition is here defined inside the class but can be anywhere in the project
+    // Types definition is are here inside the class but can be anywhere in the project
     // This represents the input type listing all the fields that the user can fill in the UI
     public record MyInputForEntity1(String name) {
     }
