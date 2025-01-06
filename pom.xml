@@ -32,7 +32,7 @@
         <dependency>
             <groupId>dev.sixpack</groupId>
             <artifactId>sixpack-sdk</artifactId>
-            <version>0.1.1</version>
+            <version>0.2.0</version>
         </dependency>
         <!-- logging implementation, you may replace with your own -->
         <dependency>

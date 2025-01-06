@@ -18,6 +18,7 @@ public class MySupplier extends Supplier {
                 .withEnvironment("STAGE")
                 .withClientCertificatePath("certs/generator.cert.pem") // download this file from the settings page
                 .withClientKeyPath("certs/generator.pkey.pem") // download this file from the settings page
+                .withAuthToken("MyAuthToken")
                 .withGenerators( // register all generators you want to include, create the objects
                         new MyGenerator1(),
                         new MyGenerator2())
