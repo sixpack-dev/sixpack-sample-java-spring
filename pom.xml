@@ -26,24 +26,24 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.2.3</version>
+            <version>3.5.3</version>
         </dependency>
         <!-- sixpack -->
         <dependency>
             <groupId>dev.sixpack</groupId>
             <artifactId>sixpack-sdk</artifactId>
-            <version>0.2.0</version>
+            <version>0.2.7</version>
         </dependency>
         <!-- logging implementation, you may replace with your own -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
-            <version>1.5.3</version>
+            <version>1.5.18</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.5.3</version>
+            <version>1.5.13</version>
         </dependency>
     </dependencies>
 

@@ -1,11 +1,13 @@
 package dev.sixpack.sample.spring;
 
-import dev.sixpack.generator.ItemName;
 import dev.sixpack.generator.Orchestrator;
-
+import dev.sixpack.generator.annotation.ItemMetadata;
 import java.util.Map;
 
-@ItemName("MyEntity3")
+@ItemMetadata(
+    name = "MyEntity3",
+    reportIssueUrl = "https://www.example.com/report-issue"
+)
 public class MyOrchestrator1 extends Orchestrator {
     public record MyInputForEntity(String id) {
     }

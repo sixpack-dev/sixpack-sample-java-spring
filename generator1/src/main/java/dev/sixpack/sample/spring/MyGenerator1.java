@@ -1,9 +1,12 @@
 package dev.sixpack.sample.spring;
 
 import dev.sixpack.generator.Generator;
-import dev.sixpack.generator.ItemName;
+import dev.sixpack.generator.annotation.ItemMetadata;
 
-@ItemName("MyEntity1")
+@ItemMetadata(
+    name = "MyEntity1",
+    reportIssueUrl = "https://www.example.com/report-issue"
+)
 public class MyGenerator1 extends Generator {
     // Types definition is are here inside the class but can be anywhere in the project
     // This represents the input type listing all the fields that the user can fill in the UI

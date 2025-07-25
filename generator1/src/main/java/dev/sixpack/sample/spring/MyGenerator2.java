@@ -1,9 +1,12 @@
 package dev.sixpack.sample.spring;
 
 import dev.sixpack.generator.Generator;
-import dev.sixpack.generator.ItemName;
+import dev.sixpack.generator.annotation.ItemMetadata;
 
-@ItemName("MyEntity2")
+@ItemMetadata(
+    name = "MyEntity2",
+    reportIssueUrl = "https://www.example.com/report-issue"
+)
 public class MyGenerator2 extends Generator {
     // Shows available types on input, they need to be nullable
     public record MyInputForEntity2(String name, // will become a text input
